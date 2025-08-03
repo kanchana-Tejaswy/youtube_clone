@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      we are redy to start project
+      <navbar />
     </div>
   );
 }
