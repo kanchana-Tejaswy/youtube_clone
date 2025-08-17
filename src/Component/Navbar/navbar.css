@@ -100,3 +100,14 @@
     border-bottom-right-radius: 10px;
     
 }
+.navbar_mike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}

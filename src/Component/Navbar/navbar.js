@@ -23,7 +23,10 @@ const Navbar = () => {
                     <input type= 'text' placeholder='Search' className='navbar_searchBoxInput' />
                      <div className="navbar_searchIconBox"><SearchIcon sx={{ fontsize: "28px", color:"white" }} /></div>
                 </div>
-                
+
+                <div className="navbar_mike">
+                    <KeyboardVoiceIcon sx={{color:"white"}}/>
+                </div>
             </div>
 
         </div>
