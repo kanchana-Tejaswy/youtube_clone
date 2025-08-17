@@ -111,3 +111,15 @@
     cursor: pointer;
 
 }
+
+/*---------------------- middel navbar  section ---------------*/
+
+.navbar-right
+{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}

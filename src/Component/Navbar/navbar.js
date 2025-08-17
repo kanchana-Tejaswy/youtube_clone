@@ -4,6 +4,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import VideoCallIcon from '@mui/icons-material/VideoCall';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Navbar = () => {
     return (
@@ -27,6 +30,10 @@ const Navbar = () => {
                 <div className="navbar_mike">
                     <KeyboardVoiceIcon sx={{color:"white"}}/>
                 </div>
+            </div>
+            <div className="navbar-right">
+                <VideoCallIcon sx={{ fontSize: "30px", cursor:"pointer",color:"white"}}/>
+                <NotificationsIcon sx={{ fontSize: "30px", cursor:"pointer",color:"white"}}/>
             </div>
 
         </div>
