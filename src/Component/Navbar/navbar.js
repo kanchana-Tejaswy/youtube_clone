@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className="navbar-left">
                 <div className="navbarHamberger">
-                    <MenuIcon />
+                    <MenuIcon sx={{color:"white"}}/>
                 </div>
             </div>
         </div>
