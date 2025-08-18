@@ -12,4 +12,4 @@ const SideNavebar = () => {
     )
 }
 
-export default SideNavbar
+export default SideNavebar
