@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
@@ -9,6 +9,13 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
 
 const Navbar = () => {
+const [userPic,setUserPic] = useState( "https://static.vecteezy.com/system/resources/previews/046/623/903/non_2x/missing-person-icon-or-logo-design-isolated-sign-symbol-illustration-a-collection-of-high-quality-black-line-style-icons-free-vector.jpg")
+const [navbarModal,setNavbarModal] =useState (false);
+
+const handleClickModal =()=>{
+    setNavbarModal(prev=>!prev);
+
+}
     return (
         <div className='navbar'>
 
@@ -33,7 +40,18 @@ const Navbar = () => {
             </div>
             <div className="navbar-right">
                 <VideoCallIcon sx={{ fontSize: "30px", cursor:"pointer",color:"white"}}/>
-                <NotificationsIcon sx={{ fontSize: "30px", cursor:"pointer",color:"white"}}/>
+                <NotificationsIcon sx={{ fontSize: "30px", cursor:"pointer",color:"white"}} />
+                <img onClick={handleClickModal} src={userPic} className="navbar-right-logo" alt='logo'/>
+                
+              { navbarModal &&
+                <div className='navbar-modal'>
+                    <div className="navbar-modal-option">Profile</div>
+                    <div className="navbar-modal-option">Logout</div>
+                    <div className="navbar-modal-option">Login</div>
+
+                </div>
+              }   
+
             </div>
 
         </div>
@@ -41,3 +59,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+ 
