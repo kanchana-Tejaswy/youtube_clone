@@ -5,8 +5,9 @@ const SideNavebar = () => {
     return (
         <div className="home-sideNavbar">
             <div className="home_sideNavbarTop">
-                <HomeIcon />
-                <div className={`home_sideNavbarTopOption`}>Home</div>
+                    <div className={`home_sideNavbarTopOption`}>
+                    <HomeIcon />
+                </div>
             </div>
         </div>
     )
