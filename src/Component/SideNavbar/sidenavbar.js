@@ -3,6 +3,7 @@ import './sideNavbar.css'
 import HomeIcon from '@mui/icons-material/Home';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 const SideNavebar = () => {
     return (
         <div className="home-sideNavbar">
@@ -21,6 +22,15 @@ const SideNavebar = () => {
                     < SubscriptionsIcon />
                     <div className="home_sideNavbarTopOptionTitle">Subscriptions</div>
                 </div>
+            </div>
+
+            <div className="home_sideNavbarMiddle">
+                <div className={`home_sideNavbarTopOption`}>
+                    <div className="home_sideNavbarTopOptionTitle">You</div>
+                    < ChevronRightIcon />
+                    
+                </div>
+
             </div>
         </div>
     )
