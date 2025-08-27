@@ -5,6 +5,7 @@ import VideoCallIcon from '@mui/icons-material/VideoCall';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
+import HistoryIcon from '@mui/icons-material/History';
 const SideNavebar = () => {
     return (
         <div className="home-sideNavbar">
@@ -35,6 +36,11 @@ const SideNavebar = () => {
                 <div className={`home_sideNavbarTopOption`}>
                     < RecentActorsIcon />
                     <div className="home_sideNavbarTopOptionTitle">Your Channel </div>
+                </div>
+
+                <div className={`home_sideNavbarTopOption`}>
+                    < HistoryIcon />
+                    <div className="home_sideNavbarTopOptionTitle"> History </div>
                 </div>
 
             </div>
