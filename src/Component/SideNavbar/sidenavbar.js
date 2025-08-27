@@ -6,6 +6,8 @@ import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
 import HistoryIcon from '@mui/icons-material/History';
+import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 const SideNavebar = () => {
     return (
         <div className="home-sideNavbar">
@@ -41,6 +43,16 @@ const SideNavebar = () => {
                 <div className={`home_sideNavbarTopOption`}>
                     < HistoryIcon />
                     <div className="home_sideNavbarTopOptionTitle"> History </div>
+                </div>
+
+                <div className={`home_sideNavbarTopOption`}>
+                    < PlaylistAddIcon />
+                    <div className="home_sideNavbarTopOptionTitle"> Playlist  </div>
+                </div>
+
+                <div className={`home_sideNavbarTopOption`}>
+                    < OndemandVideoIcon />
+                    <div className="home_sideNavbarTopOptionTitle"> Your videos </div>
                 </div>
 
             </div>
