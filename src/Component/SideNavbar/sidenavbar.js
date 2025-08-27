@@ -7,6 +7,7 @@ const SideNavebar = () => {
             <div className="home_sideNavbarTop">
                     <div className={`home_sideNavbarTopOption`}>
                     <HomeIcon />
+                    <div className="home_sideNavbarTopOptionTitle">Home</div>
                 </div>
             </div>
         </div>
